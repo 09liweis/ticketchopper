@@ -1,12 +1,13 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const route = useRoute()
 const { t } = useI18n()
 const router = useRouter()
 const currentLang = route.params.lang || 'zh'
+const mobileMenuOpen = ref(false)
 
 const navLinks = computed(() => [
   { key: 'nav.home', path: '/' },
@@ -20,6 +21,14 @@ const navLinks = computed(() => [
 const toggleLang = () => {
   const newLang = currentLang === 'en' ? 'zh' : 'en'
   router.push(`/${newLang}`)
+}
+
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value
+}
+
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false
 }
 </script>
 
@@ -35,7 +44,7 @@ const toggleLang = () => {
           </NuxtLink>
         </div>
 
-        <!-- Navigation -->
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8">
           <NuxtLink
             v-for="link in navLinks"
@@ -47,7 +56,7 @@ const toggleLang = () => {
           </NuxtLink>
         </nav>
 
-        <!-- Language Switcher & Phone -->
+        <!-- Language Switcher & Phone & Mobile Menu Button -->
         <div class="flex items-center space-x-4">
           <button
             @click="toggleLang"
@@ -58,8 +67,53 @@ const toggleLang = () => {
           <a href="tel:2898098899" class="hidden sm:inline-block text-blue-900 font-semibold hover:text-blue-700 transition-colors">
             {{ t('site.phone') }}
           </a>
+          <!-- Mobile Menu Button -->
+          <button
+            @click="toggleMobileMenu"
+            class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                v-if="!mobileMenuOpen"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+              <path
+                v-else
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
         </div>
       </div>
+
+      <!-- Mobile Navigation Menu -->
+      <nav
+        v-if="mobileMenuOpen"
+        class="md:hidden border-t border-gray-200 bg-white"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <NuxtLink
+            v-for="link in navLinks"
+            :key="link.key"
+            :to="`/${currentLang}${link.path}`"
+            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-900 font-medium transition-colors"
+            @click="closeMobileMenu"
+          >
+            {{ t(link.key) }}
+          </NuxtLink>
+        </div>
+      </nav>
     </div>
   </header>
 </template>
