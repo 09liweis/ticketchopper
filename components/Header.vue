@@ -24,8 +24,8 @@ const toggleLang = () => {
 
         <!-- Navigation -->
         <nav class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.home') }}</a>
-          <a href="#" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.about') }}</a>
+          <a href="/" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.home') }}</a>
+          <a href="/about-us" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.about') }}</a>
           <a href="#" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.services') }}</a>
           <a href="#" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.blog') }}</a>
           <a href="#" class="text-gray-700 hover:text-blue-900 font-medium text-sm">{{ t('nav.faq') }}</a>
