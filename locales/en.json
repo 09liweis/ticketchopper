@@ -1,0 +1,47 @@
+{
+  "site": {
+    "phone": "289-809-8899",
+    "wechat": "1020613826",
+    "address": "203-1943 Ironoak Way Oakville ON L6H 3V7",
+    "quote": "\"Justice brought by love is surrender; justice brought by law is punishment\""
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "intro": {
+    "paragraph": "We serve many VVIP clients, including real estate tycoon Leo, 168 Sushi owner Ivan, TikTok influencers, luxury car salesman Howard, experienced real estate expert and Shengdi Realty owner Mike, top life insurance champion Eric (Huisheng Finance), EASY EDUCATION owner Jacky, and the youngest TikTok pilot Jeffrey. We also have special strengths in handling traffic tickets in Alberta, Quebec and New York State."
+  },
+  "services": {
+    "title": "Legal Practice Areas",
+    "typesTitle": "Types of Criminal Cases",
+    "items": {
+      "dui": { "title": "DUI / Impaired Driving", "desc": "We provide professional legal advice and defense services to help you address DUI charges and protect your driving privileges and record." },
+      "domestic": { "title": "Domestic Violence / Assault", "desc": "When facing domestic violence or assault charges, we provide strong legal support to protect your rights and achieve the best outcome." },
+      "theft": { "title": "Petty Theft", "desc": "We understand the consequences of petty theft charges and strive to provide strategic defense to protect your reputation and future." },
+      "dangerous": { "title": "Dangerous Driving", "desc": "Dangerous driving charges can seriously affect your life; our legal team provides professional defense strategies to minimize the impact." },
+      "fraud": { "title": "Fraud", "desc": "Fraud cases are often complex and detail-oriented; we apply our expertise to provide comprehensive legal services." },
+      "mischief": { "title": "Mischief", "desc": "For mischief charges you need experienced counsel to protect your rights. We provide detailed legal analysis and strong defense strategies." }
+    }
+  },
+  "traffic": {
+    "title": "Traffic Violations",
+    "items": {
+      "speed": { "title": "Speeding", "desc": "Why you should fight a speeding ticket." },
+      "sign": { "title": "Not Following Signs", "desc": "Violating parking or stop signs can carry penalties." },
+      "handheld": { "title": "Handheld Devices", "desc": "Convictions for handheld wireless or entertainment devices can carry consequences." },
+      "seatbelt": { "title": "Seatbelt Violations", "desc": "Fines for seatbelt violations are commonly CA$200.00." },
+      "suspension": { "title": "Licence Suspension", "desc": "In Ontario you can lose driving privileges in several ways." },
+      "noInsurance": { "title": "No Insurance", "desc": "A conviction can lead to severe consequences including automatic suspension." }
+    }
+  },
+  "recent": {"title":"Recent Case Studies"},
+  "contact": {"title":"Contact Us","form": {"name":"Name*","email":"E-mail *","phone":"Phone*","subject":"Subject","message":"Message","submit":"Submit Now"}},
+  "stats": {"years":"20 years","cases":"Various case experience","freeConsult":"Free Consultation","trust":"Trust & Satisfaction","completed":"Completed","happyClients":"Satisfied clients","wins":"Winning situations","team":"Team members"},
+  "news": {"title":"Latest News"},
+  "subscribe": {"title":"Stay Connected","label":"Email address","button":"Subscribe"}
+}

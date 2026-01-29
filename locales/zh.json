@@ -1,0 +1,65 @@
+{
+  "site": {
+    "phone": "289-809-8899",
+    "wechat": "1020613826",
+    "address": "203-1943 Ironoak Way Oakville ON L6H 3V7",
+    "quote": "“爱带来的正义是投降，法律带来的正义是惩罚”"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务项目",
+    "blog": "博文",
+    "faq": "常问问题",
+    "contact": "联系我们"
+  },
+  "intro": {
+    "paragraph": "公司服务众多VVIP客户，包括地产大亨Leo、168寿司老板Ivan、TikTok网红、豪车销售王子Howard、经验丰富的房地产专家、盛地地产老板Mike、顶级寿险销售冠军汇盛金融老板Eric、EASY EDUCATION 老板Jacky和最年轻的TikTok飞行员杰弗里。他们在处理艾伯塔省、魁北克省和纽约州的交通罚单方面也有独特的优势。"
+  },
+  "services": {
+    "title": "法律业务领域",
+    "typesTitle": "犯罪类型处理",
+    "items": {
+      "dui": {
+        "title": "醉驾/酒后驾车",
+        "desc": "我们提供专业的法律咨询和辩护服务，帮助您应对醉驾指控，保护您的驾驶权利及个人记录。"
+      },
+      "domestic": {
+        "title": "家暴/袭击",
+        "desc": "面对家暴或袭击指控时，我们将为您提供强有力的法律支持，保护您的个人权益，达到最佳结果。"
+      },
+      "theft": {
+        "title": "小额盗窃",
+        "desc": "我们理解小额盗窃指控带来的影响，并致力于为您提供策略性的辩护，以保护您的名誉和未来。"
+      },
+      "dangerous": {
+        "title": "危险驾驶",
+        "desc": "危险驾驶的指控可能严重影响您的生活，我们的律师团队将为您提供专业的辩护策略，旨在最大限度减轻指控的影响。"
+      },
+      "fraud": {
+        "title": "诈骗",
+        "desc": "诈骗案件往往复杂且涉及细节，我们将运用专业知识为您提供全面的法律服务，助您清晰解决每一个法律难题。"
+      },
+      "mischief": {
+        "title": "恶作剧",
+        "desc": "面对恶作剧的指控，您需要经验丰富的律师来保护您的权益。我们提供细致的法律分析和有力的辩护策略。"
+      }
+    }
+  },
+  "traffic": {
+    "title": "交通违规处理",
+    "items": {
+      "speed": { "title": "超速行驶", "desc": "为什么您需要对抗超速罚单" },
+      "sign": { "title": "不遵守标志", "desc": "违反停车标志——未能停车" },
+      "handheld": { "title": "手持设备", "desc": "手持无线通信或电子娱乐设备定罪可能会导致您。" },
+      "seatbelt": { "title": "违规系安全带", "desc": "任何违反安全带规定的罚款为 200.00 。" },
+      "suspension": { "title": "暂停行驶", "desc": "在安大略省，您可以通过多种方式失去驾驶特权。" },
+      "noInsurance": { "title": "无保险", "desc": "一旦被定罪，您将面临严重的后果，包括自动吊。" }
+    }
+  },
+  "recent": {"title":"最近的案例研究"},
+  "contact": {"title":"联系我们","form": {"name":"姓名*","email":"E-mail *","phone":"电话*","subject":"主题","message":"信息","submit":"现在提交"}},
+  "stats": {"years":"20年","cases":"各种案例经验","freeConsult":"免费咨询","trust":"信任与满意","completed":"已完成","happyClients":"满意的客户","wins":"Winning situation","team":"团队成员"},
+  "news": {"title":"最新消息"},
+  "subscribe": {"title":"始终保持联系","label":"电子邮件地址","button":"订阅"}
+}
