@@ -1,7 +1,10 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const { t } = useI18n()
+const route = useRoute()
+const currentLang = route.params.lang || 'zh'
 </script>
 
 <template>
