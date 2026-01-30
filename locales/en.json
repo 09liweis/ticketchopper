@@ -39,6 +39,15 @@
       "noInsurance": { "title": "No Insurance", "desc": "A conviction can lead to severe consequences including automatic suspension." }
     }
   },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to common questions about our criminal defense services",
+    "cta": {
+      "title": "Still Have Questions?",
+      "description": "Contact us today for a free consultation to discuss your case.",
+      "wechat": "WeChat: "
+    }
+  },
   "recent": {"title":"Recent Case Studies"},
   "contact": {"title":"Contact Us","form": {"name":"Name*","email":"E-mail *","phone":"Phone*","subject":"Subject","message":"Message","submit":"Submit Now"}},
   "stats": {"years":"20 years","cases":"Various case experience","freeConsult":"Free Consultation","trust":"Trust & Satisfaction","completed":"Completed","happyClients":"Satisfied clients","wins":"Winning situations","team":"Team members"},
