@@ -2,6 +2,7 @@
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
+import { useBlogPosts } from '~/composables/useBlogPosts'
 
 definePageMeta({
   layout: 'default'
@@ -9,38 +10,40 @@ definePageMeta({
 
 const route = useRoute()
 const { locale } = useI18n()
+const { getPostBySlug } = useBlogPosts()
 
 const lang = (route.params.lang === 'en') ? 'en' : 'zh'
 locale.value = lang
 const currentLang = lang
 
-// This would ideally come from a blog data store or API
-// For now, it's a placeholder showing how the page would work
 const blogSlug = route.params.slug
 
-const placeholderPost = computed(() => ({
-  title: currentLang === 'en' ? 'Blog Post Title' : '博客文章标题',
-  date: '06 Jan 2026',
-  author: 'seagod',
-  category: currentLang === 'en' ? 'Canadian Law' : '加拿大法',
-  content: currentLang === 'en' 
-    ? '<p>Blog post content would be rendered here...</p>' 
-    : '<p>博客文章内容将在这里显示...</p>'
-}))
+const currentPost = computed(() => {
+  const post = getPostBySlug(String(blogSlug), currentLang)
+  return post || {
+    title: currentLang === 'en' ? 'Blog Post Not Found' : '博客文章未找到',
+    date: '01 Jan 2026',
+    author: 'seagod',
+    category: currentLang === 'en' ? 'General' : '通用',
+    fullContent: currentLang === 'en' 
+      ? '<p>This blog post could not be found.</p>' 
+      : '<p>找不到此博客文章。</p>'
+  }
+})
 </script>
 
 <template>
   <div>
     <BlogPostHero 
       :current-lang="currentLang"
-      :title="placeholderPost.title"
-      :date="placeholderPost.date"
-      :author="placeholderPost.author"
-      :category="placeholderPost.category"
+      :title="currentPost.title"
+      :date="`${currentPost.date.day} ${currentPost.date.month}`"
+      :author="currentPost.author"
+      :category="currentPost.category"
     />
     <BlogPostContent 
       :current-lang="currentLang"
-      :content="placeholderPost.content"
+      :content="currentPost.fullContent"
     />
     <HomeContactForm :current-lang="currentLang" />
   </div>
