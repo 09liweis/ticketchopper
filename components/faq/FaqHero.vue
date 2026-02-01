@@ -15,7 +15,9 @@ defineProps({
         <a :href="`/${currentLang}`" class="hover:text-white transition-colors">
           {{ currentLang === 'en' ? 'Home' : '首页' }}
         </a>
-        <Icon name="mdi:chevron-right" class="w-4 h-4" />
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M8.59 16.58L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.58z"/>
+        </svg>
         <span class="text-white">{{ currentLang === 'en' ? 'FAQ' : '常问问题' }}</span>
       </nav>
 

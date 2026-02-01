@@ -78,10 +78,20 @@ const toggleItem = (index) => {
               <h3 class="text-lg font-semibold text-gray-900 text-left">
                 {{ item.question }}
               </h3>
-              <Icon
-                :name="expandedItems.includes(index) ? 'mdi:chevron-up' : 'mdi:chevron-down'"
-                class="w-6 h-6 text-blue-600 flex-shrink-0 ml-4"
-              />
+              <svg
+                v-if="expandedItems.includes(index)"
+                class="w-6 h-6 text-blue-600 flex-shrink-0 ml-4 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path d="M7 15l5-5 5 5H7z" />
+              </svg>
+              <svg
+                v-else
+                class="w-6 h-6 text-blue-600 flex-shrink-0 ml-4 fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path d="M7 10l5 5 5-5H7z" />
+              </svg>
             </button>
 
             <div
