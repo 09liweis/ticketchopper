@@ -7,13 +7,18 @@ const route = useRoute()
 const currentLang = route.params.lang || 'zh'
 
 const services = [
-  { key: 'dui', icon: '🚗' },
-  { key: 'domestic', icon: '⚖️' },
-  { key: 'theft', icon: '📋' },
-  { key: 'dangerous', icon: '⚠️' },
-  { key: 'fraud', icon: '🔍' },
-  { key: 'mischief', icon: '📌' }
+  { key: 'dui', icon: '🚗', slug: 'impaired-driving-cannabis-laws' },
+  { key: 'domestic', icon: '⚖️', slug: 'domestic-violence-assault-canada' },
+  { key: 'theft', icon: '📋', slug: 'petty-theft-concept-consequences' },
+  { key: 'dangerous', icon: '⚠️', slug: 'dangerous-driving-definition' },
+  { key: 'fraud', icon: '🔍', slug: 'fraud-definition-consequences' },
+  { key: 'mischief', icon: '📌', slug: 'mischief-definition-consequences' }
 ]
+
+const getBlogUrl = (slug) => {
+  const lang = currentLang || 'zh'
+  return `/${lang}/blog/${slug}`
+}
 </script>
 
 <template>
@@ -37,9 +42,9 @@ const services = [
           <p class="text-gray-700 leading-relaxed mb-4">
             {{ t(`services.items.${service.key}.desc`) }}
           </p>
-          <a href="#" class="text-blue-900 font-semibold hover:text-blue-700">
+          <NuxtLink :to="getBlogUrl(service.slug)" class="text-blue-900 font-semibold hover:text-blue-700">
             {{ currentLang === 'en' ? 'Learn More →' : '了解详情 →' }}
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </div>
