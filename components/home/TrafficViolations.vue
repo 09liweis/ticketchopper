@@ -1,9 +1,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { useRouter, useRoute } from '#app'
+import { useRoute } from '#app'
 
 const { t } = useI18n()
-const router = useRouter()
 const route = useRoute()
 
 const trafficItems = [
@@ -15,9 +14,9 @@ const trafficItems = [
   'noInsurance'
 ]
 
-const navigateToDetail = (item) => {
+const getDetailLink = (item) => {
   const lang = route.params.lang || 'en'
-  router.push(`/${lang}/traffic/${item}`)
+  return `/${lang}/traffic/${item}`
 }
 </script>
 
@@ -27,10 +26,10 @@ const navigateToDetail = (item) => {
       <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">{{ t('traffic.title') }}</h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <button
+        <NuxtLink
           v-for="item in trafficItems"
           :key="item"
-          @click="navigateToDetail(item)"
+          :to="getDetailLink(item)"
           class="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg border border-blue-200 hover:border-blue-400 hover:shadow-lg transition-all cursor-pointer text-left"
         >
           <h3 class="text-lg font-bold text-blue-900 mb-2">
@@ -39,7 +38,7 @@ const navigateToDetail = (item) => {
           <p class="text-gray-700">
             {{ t(`traffic.items.${item}.desc`) }}
           </p>
-        </button>
+        </NuxtLink>
       </div>
     </div>
   </section>
