@@ -113,15 +113,15 @@ const { t } = useI18n()
           </h2>
           <p class="text-gray-600 text-lg mb-8">
             {{ t('common.findMap') }}
-            }}
           </p>
-          <div class="rounded-2xl overflow-hidden shadow-2xl h-96 md:h-full md:min-h-96 border-4 border-gray-200">
+          <div class="rounded overflow-hidden shadow h-96 border border-gray-200">
             <iframe
               class="w-full h-full"
+              style="border: 0;"
               loading="lazy"
               allowfullscreen=""
               referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.3887826463837!2d-79.8527!3d43.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1e6c0b0b0b0b%3A0x0!2s203-1943%20Ironoak%20Way%2C%20Oakville%2C%20ON%20L6H%203V7!5e0!3m2!1sen!2sca!4v1675000000000"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.3887826463837!2d-79.8527!3d43.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b1e6c0b0b0b0b%3A0x0!2s203-1943%20Ironoak%20Way%2C%20Oakville%2C%20ON%20L6H%203V7!5e0!3m2!1sen!2sca!4v1675000000000&z=15&output=embed"
             >
             </iframe>
           </div>
