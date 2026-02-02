@@ -5,7 +5,7 @@ import { computed, ref } from 'vue'
 
 const route = useRoute()
 const { t } = useI18n()
-const currentLang = route.params.lang || 'zh'
+const currentLang = computed(() => route.params.lang || 'zh')
 const mobileMenuOpen = ref(false)
 
 const navLinks = computed(() => [
@@ -18,7 +18,7 @@ const navLinks = computed(() => [
 ])
 
 const toggleLangLink = computed(() => {
-  const newLang = currentLang === 'en' ? 'zh' : 'en'
+  const newLang = currentLang.value === 'en' ? 'zh' : 'en'
   const pathWithoutLang = route.path.replace(/^\/(zh|en)/, '')
   return `/${newLang}${pathWithoutLang}`
 })
@@ -26,9 +26,9 @@ const toggleLangLink = computed(() => {
 const isLinkActive = (path) => {
   // Handle the special case for the home page link
   if (path === '/') {
-    return route.path === `/${currentLang}` || route.path === `/${currentLang}/`
+    return route.path === `/${currentLang.value}` || route.path === `/${currentLang.value}/`
   }
-  return route.path.startsWith(`/${currentLang}${path}`)
+  return route.path.startsWith(`/${currentLang.value}${path}`)
 }
 
 const toggleMobileMenu = () => {
