@@ -1,7 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
-const { t, locale: currentLang } = useI18n()
+const { t } = useI18n()
+const route = useRoute()
+const currentLang = computed(() => route.params.lang || 'zh')
 </script>
 
 <template>
@@ -16,29 +20,29 @@ const { t, locale: currentLang } = useI18n()
 
         <!-- Services Links -->
         <div>
-          <h4 class="font-semibold mb-4">{{ currentLang === 'en' ? 'Services' : '服务' }}</h4>
+          <h4 class="font-semibold mb-4">{{ t('nav.services') }}</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="#" class="hover:text-white transition">{{ currentLang === 'en' ? 'DUI Defense' : '醉驾辩护' }}</a></li>
-            <li><a href="#" class="hover:text-white transition">{{ currentLang === 'en' ? 'Traffic Tickets' : '交通罚单' }}</a></li>
-            <li><a href="#" class="hover:text-white transition">{{ currentLang === 'en' ? 'Criminal Defense' : '刑事辩护' }}</a></li>
-            <li><a href="#" class="hover:text-white transition">{{ currentLang === 'en' ? 'Free Consultation' : '免费咨询' }}</a></li>
+            <li><NuxtLink :to="`/${currentLang}/services#dui`" class="hover:text-white transition">{{ t('services.items.dui.title') }}</NuxtLink></li>
+            <li><NuxtLink :to="`/${currentLang}#traffic`" class="hover:text-white transition">{{ t('traffic.title') }}</NuxtLink></li>
+            <li><NuxtLink :to="`/${currentLang}/services`" class="hover:text-white transition">{{ t('services.typesTitle') }}</NuxtLink></li>
+            <li><NuxtLink :to="`/${currentLang}/contact`" class="hover:text-white transition">{{ t('contact.freeConsultation') }}</NuxtLink></li>
           </ul>
         </div>
 
         <!-- Quick Links -->
         <div>
-          <h4 class="font-semibold mb-4">{{ currentLang === 'en' ? 'Quick Links' : '快速链接' }}</h4>
+          <h4 class="font-semibold mb-4">{{ t('common.home') }}</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
-            <li><a href="#" class="hover:text-white transition">{{ t('nav.about') }}</a></li>
-            <li><a href="#" class="hover:text-white transition">{{ t('nav.blog') }}</a></li>
-            <li><a href="#" class="hover:text-white transition">{{ t('nav.faq') }}</a></li>
-            <li><a href="#" class="hover:text-white transition">{{ t('nav.contact') }}</a></li>
+            <li><NuxtLink :to="`/${currentLang}/about-us`" class="hover:text-white transition">{{ t('nav.about') }}</NuxtLink></li>
+            <li><NuxtLink :to="`/${currentLang}/blogs`" class="hover:text-white transition">{{ t('nav.blog') }}</NuxtLink></li>
+            <li><NuxtLink :to="`/${currentLang}/faq`" class="hover:text-white transition">{{ t('nav.faq') }}</NuxtLink></li>
+            <li><NuxtLink :to="`/${currentLang}/contact`" class="hover:text-white transition">{{ t('nav.contact') }}</NuxtLink></li>
           </ul>
         </div>
 
         <!-- Contact Info -->
         <div>
-          <h4 class="font-semibold mb-4">{{ currentLang === 'en' ? 'Contact' : '联系方式' }}</h4>
+          <h4 class="font-semibold mb-4">{{ t('nav.contact') }}</h4>
           <ul class="space-y-2 text-gray-400 text-sm">
             <li class="flex items-center">
               <span class="mr-2">📞</span>
