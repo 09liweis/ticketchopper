@@ -31,12 +31,41 @@
   "traffic": {
     "title": "Traffic Violations",
     "items": {
-      "speed": { "title": "Speeding", "desc": "Why you should fight a speeding ticket." },
-      "sign": { "title": "Not Following Signs", "desc": "Violating parking or stop signs can carry penalties." },
-      "handheld": { "title": "Handheld Devices", "desc": "Convictions for handheld wireless or entertainment devices can carry consequences." },
-      "seatbelt": { "title": "Seatbelt Violations", "desc": "Fines for seatbelt violations are commonly CA$200.00." },
-      "suspension": { "title": "Licence Suspension", "desc": "In Ontario you can lose driving privileges in several ways." },
-      "noInsurance": { "title": "No Insurance", "desc": "A conviction can lead to severe consequences including automatic suspension." }
+      "speed": {
+        "title": "Speeding",
+        "desc": "Why you should fight a speeding ticket.",
+        "detail": "Many drivers find it tempting to simply pay the fine for a traffic ticket rather than go through the trouble of contesting it. However, for speeding violations, the true cost extends far beyond the ticket itself. Beyond the direct monetary impact such as penalty points affecting your driving record, there is a long-term financial burden including increased vehicle insurance rates for at least three years. If you choose to plead guilty and pay the ticket without considering the broader impact, the real cost becomes even more complicated."
+      },
+      "sign": {
+        "title": "Not Following Signs",
+        "desc": "Violating parking or stop signs can carry penalties.",
+        "detail": "While this violation may seem minor, its penalties can have lasting impacts, affecting your driving record for at least three years and potentially resulting in increased insurance rates. We have 25 years of experience in this field. Don't just pay the fine or attempt to contest it alone in court. Penalty: 3 demerit points, Fine: $85.00, Conviction: Your driving record will show a conviction for 3 years."
+      },
+      "handheld": {
+        "title": "Handheld Devices",
+        "desc": "Convictions for handheld wireless or entertainment devices can carry consequences.",
+        "detail": "Convictions for handheld wireless communication or electronic entertainment devices can cause your insurance rates to increase significantly, or worse, may result in your license being suspended. Charges for using handheld wireless devices include any interaction, holding, or use of the device while driving, excluding emergency calls, even when stopped at red lights or stop signs. Similarly, charges for handheld electronic entertainment devices include MP3 or DVD players, televisions, and computers."
+      },
+      "seatbelt": {
+        "title": "Seatbelt Violations",
+        "desc": "Fines for seatbelt violations are commonly $200.00.",
+        "detail": "For Ontario G-Class license holders: Penalties range from first offense fines of $500 to $1,000 and license suspension for 3 days, to third or subsequent offenses of $500 to $3,000 in fines and license suspension for 30 days. Novice drivers face escalating penalties. Any conviction for seatbelt violations will remain on your driving record for three years. Failing to wear a seatbelt while driving or as a passenger will not result in demerit points. However, any other seatbelt violations will result in two demerit points on your driving license."
+      },
+      "suspension": {
+        "title": "Licence Suspension",
+        "desc": "In Ontario you can lose driving privileges in several ways.",
+        "detail": "When can your license be suspended? Your permit may be suspended for many reasons, including: failure to pay traffic tickets or fines, alcohol-related criminal conduct, medical reasons, and demerit points. Now, the cost of driving during a suspension may be even higher than the license itself. Since December 1, 2010, police have more tools to remove suspended and injured drivers from the road. A 7-day vehicle seizure applies to drivers with suspended licenses. Being convicted of driving during suspension can affect your insurance for at least three years."
+      },
+      "noInsurance": {
+        "title": "No Insurance",
+        "desc": "A conviction can lead to severe consequences including automatic suspension.",
+        "detail": "Once convicted, you will face serious consequences including automatic license suspension for six months, fines up to $50,000, and potential significant increases in annual insurance rates (up to thousands of dollars). In Ontario, you can lose your driving privileges in multiple ways. Don't just pay the fine or attempt to contest it alone in court. We can help you. Our commitment is to relentlessly pursue complete elimination of your charges. If complete elimination is not possible, we will work to reduce the charges and mitigate their impact."
+      }
+    },
+    "cta": {
+      "title": "We Can Help You",
+      "description": "Contact us today for a free consultation to discuss your traffic violation case.",
+      "button": "Get a Free Quote"
     }
   },
   "faq": {
