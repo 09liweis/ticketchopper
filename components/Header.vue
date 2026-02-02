@@ -71,7 +71,7 @@ const closeMobileMenu = () => {
             :to="toggleLangLink"
             class="px-3 py-1 text-sm font-medium rounded-md bg-blue-100 text-blue-900 hover:bg-blue-200 transition-colors"
           >
-            {{ currentLang.value === 'en' ? t('common.chinese') : t('common.english') }}
+            {{ t('common.toggleLang') }}
           </NuxtLink>
           <a href="tel:2898098899" class="hidden sm:inline-block text-blue-900 font-semibold hover:text-blue-700 transition-colors">
             {{ t('site.phone') }}

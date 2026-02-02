@@ -80,8 +80,7 @@
   "recent": {"title":"Recent Case Studies"},
   "common": {
     "legalServices": "Legal Services",
-    "chinese": "中文",
-    "english": "EN",
+    "toggleLang": "中文",
     "phone": "Phone",
     "address": "Address",
     "home": "Home",

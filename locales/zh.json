@@ -98,8 +98,7 @@
   "recent": {"title":"最近的案例研究"},
   "common": {
     "legalServices": "法律服务",
-    "chinese": "中文",
-    "english": "EN",
+    "toggleLang": "EN",
     "phone": "电话",
     "address": "地址",
     "home": "首页",
