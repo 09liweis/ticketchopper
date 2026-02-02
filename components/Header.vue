@@ -18,6 +18,14 @@ const navLinks = computed(() => [
   { key: 'nav.contact', path: '/contact' }
 ])
 
+const isLinkActive = (path) => {
+  // Handle the special case for the home page link
+  if (path === '/') {
+    return route.path === `/${currentLang}` || route.path === `/${currentLang}/`
+  }
+  return route.path.startsWith(`/${currentLang}${path}`)
+}
+
 const toggleLang = () => {
   const newLang = currentLang === 'en' ? 'zh' : 'en'
   router.push(`/${newLang}`)
@@ -50,7 +58,8 @@ const closeMobileMenu = () => {
             v-for="link in navLinks"
             :key="link.key"
             :to="`/${currentLang}${link.path}`"
-            class="text-gray-700 hover:text-blue-900 font-medium text-sm transition-colors"
+            class="font-medium text-sm transition-colors"
+            :class="isLinkActive(link.path) ? 'text-blue-900' : 'text-gray-700 hover:text-blue-900'"
           >
             {{ t(link.key) }}
           </NuxtLink>
@@ -107,7 +116,8 @@ const closeMobileMenu = () => {
             v-for="link in navLinks"
             :key="link.key"
             :to="`/${currentLang}${link.path}`"
-            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-blue-50 hover:text-blue-900 font-medium transition-colors"
+            class="block px-3 py-2 rounded-md font-medium transition-colors"
+            :class="isLinkActive(link.path) ? 'bg-blue-50 text-blue-900' : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'"
             @click="closeMobileMenu"
           >
             {{ t(link.key) }}
