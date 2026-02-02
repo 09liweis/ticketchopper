@@ -1,10 +1,14 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+
 defineProps({
   currentLang: {
     type: String,
     default: 'zh'
   }
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -17,12 +21,12 @@ defineProps({
       <!-- Badge -->
       <div class="inline-block mb-6 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/50">
         <p class="text-sm font-semibold text-blue-200">
-          {{ currentLang === 'en' ? '24/7 Available' : '全天24小时可用' }}
+          {{ t('common.available247') }}
         </p>
       </div>
       
       <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-        {{ currentLang === 'en' ? 'Contact Us' : '联系我们' }}
+        {{ t('contact.title') }}
       </h1>
       <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
         {{ currentLang === 'en'

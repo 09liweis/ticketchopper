@@ -18,13 +18,10 @@ const { t } = useI18n()
         <!-- Contact Information -->
         <div>
           <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            {{ currentLang === 'en' ? 'Contact Information' : '联系信息' }}
+            {{ t('common.contactInfo') }}
           </h2>
           <p class="text-gray-600 text-lg mb-12">
-            {{ currentLang === 'en'
-              ? 'Reach out to us through any of these channels'
-              : '通过以下任何渠道与我们联系'
-            }}
+            {{ t('common.reachOut') }}
           </p>
 
           <div class="space-y-6">
@@ -38,13 +35,13 @@ const { t } = useI18n()
                 </div>
                 <div class="flex-1">
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
-                    {{ currentLang === 'en' ? 'Phone' : '电话' }}
+                    {{ t('common.phone') }}
                   </h3>
                   <a href="tel:289-809-8899" class="text-blue-900 hover:text-blue-700 font-semibold text-lg transition-colors">
                     289-809-8899
                   </a>
                   <p class="text-gray-600 text-sm mt-1">
-                    {{ currentLang === 'en' ? 'Available 24/7' : '全天24小时可用' }}
+                    {{ t('common.available') }}
                   </p>
                 </div>
               </div>
@@ -60,11 +57,11 @@ const { t } = useI18n()
                 </div>
                 <div class="flex-1">
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
-                    {{ currentLang === 'en' ? 'WeChat' : '微信' }}
+                    {{ t('common.wechat') }}
                   </h3>
                   <p class="text-blue-900 font-semibold text-lg">1020613826</p>
                   <p class="text-gray-600 text-sm mt-1">
-                    {{ currentLang === 'en' ? 'Preferred for Chinese clients' : '受中文客户欢迎' }}
+                    {{ t('common.preferred') }}
                   </p>
                 </div>
               </div>
@@ -80,7 +77,7 @@ const { t } = useI18n()
                 </div>
                 <div class="flex-1">
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
-                    {{ currentLang === 'en' ? 'Office Address' : '办公地址' }}
+                    {{ t('common.officeAddress') }}
                   </h3>
                   <p class="text-gray-700 font-semibold leading-relaxed">203-1943 Ironoak Way<br />Oakville, ON L6H 3V7<br />Canada</p>
                 </div>
@@ -97,11 +94,11 @@ const { t } = useI18n()
                 </div>
                 <div class="flex-1">
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
-                    {{ currentLang === 'en' ? 'Office Hours' : '办公时间' }}
+                    {{ t('common.officeHours') }}
                   </h3>
                   <p class="text-gray-700 font-medium leading-relaxed">
-                    {{ currentLang === 'en' ? 'Mon - Fri: 9:00 AM - 6:00 PM' : '周一至周五：上午9:00 - 下午6:00' }}<br />
-                    {{ currentLang === 'en' ? 'Sat - Sun: By Appointment' : '周六至周日：预约制' }}
+                    {{ t('common.monFri') }}<br />
+                    {{ t('common.satSun') }}
                   </p>
                 </div>
               </div>
@@ -112,12 +109,10 @@ const { t } = useI18n()
         <!-- Google Map -->
         <div>
           <h2 class="text-4xl font-bold text-gray-900 mb-4">
-            {{ currentLang === 'en' ? 'Our Location' : '我们的位置' }}
+            {{ t('common.ourLocation') }}
           </h2>
           <p class="text-gray-600 text-lg mb-8">
-            {{ currentLang === 'en'
-              ? 'Find us on the map'
-              : '在地图上找到我们'
+            {{ t('common.findMap') }}
             }}
           </p>
           <div class="rounded-2xl overflow-hidden shadow-2xl h-96 md:h-full md:min-h-96 border-4 border-gray-200">

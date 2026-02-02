@@ -48,7 +48,7 @@ const closeMobileMenu = () => {
         <div class="flex-shrink-0">
           <NuxtLink :to="`/${currentLang}`" class="block">
             <h1 class="text-2xl font-bold text-blue-900">Ticketchopper</h1>
-            <p class="text-xs text-gray-600">{{ currentLang === 'en' ? 'Legal Services' : '法律服务' }}</p>
+            <p class="text-xs text-gray-600">{{ t('common.legalServices') }}</p>
           </NuxtLink>
         </div>
 
@@ -71,7 +71,7 @@ const closeMobileMenu = () => {
             :to="toggleLangLink"
             class="px-3 py-1 text-sm font-medium rounded-md bg-blue-100 text-blue-900 hover:bg-blue-200 transition-colors"
           >
-            {{ currentLang === 'en' ? '中文' : 'EN' }}
+            {{ currentLang.value === 'en' ? t('common.chinese') : t('common.english') }}
           </NuxtLink>
           <a href="tel:2898098899" class="hidden sm:inline-block text-blue-900 font-semibold hover:text-blue-700 transition-colors">
             {{ t('site.phone') }}

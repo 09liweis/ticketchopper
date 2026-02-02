@@ -1,4 +1,6 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+
 defineProps({
   currentLang: {
     type: String,
@@ -9,6 +11,8 @@ defineProps({
     required: true
   }
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
