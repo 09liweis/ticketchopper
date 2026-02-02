@@ -1,7 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
 const { t } = useI18n()
+const route = useRoute()
+const currentLang = computed(() => route.params.lang || 'zh')
 
 const stats = [
   { key: 'years', value: '20+' },
@@ -23,9 +27,9 @@ const stats = [
 
       <div class="mt-12 text-center">
         <p class="text-xl text-blue-100 mb-6">{{ t('stats.cases') }}</p>
-        <a href="#" class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-blue-100 transition-colors">
+        <NuxtLink :to="`/${currentLang}/contact`" class="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-blue-100 transition-colors">
           {{ t('stats.freeConsult') }}
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </section>
