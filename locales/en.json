@@ -105,7 +105,19 @@
     "blogNotFound": "Blog Post Not Found",
     "general": "General"
   },
-  "contact": {"title":"Contact Us","form": {"name":"Name*","email":"E-mail *","phone":"Phone*","subject":"Subject","message":"Message","submit":"Submit Now"}},
+  "contact": {
+    "title":"Contact Us",
+    "freeConsultation": "Free Consultation",
+    "discussCase": "Contact us today to discuss your case",
+    "yourName": "Your Name *",
+    "yourEmail": "Your Email *",
+    "yourPhone": "Your Phone *",
+    "subject": "Subject",
+    "message": "Message *",
+    "submit": "Submit Now",
+    "thankYou": "Thank you! We will contact you soon.",
+    "form": {"name":"Name*","email":"E-mail *","phone":"Phone*","subject":"Subject","message":"Message","submit":"Submit Now"}
+  },
   "stats": {"years":"20 years","cases":"Various case experience","freeConsult":"Free Consultation","trust":"Trust & Satisfaction","completed":"Completed","happyClients":"Satisfied clients","wins":"Winning situations","team":"Team members"},
   "news": {"title":"Latest News"},
   "subscribe": {"title":"Stay Connected","label":"Email address","button":"Subscribe"}

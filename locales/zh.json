@@ -123,7 +123,19 @@
     "blogNotFound": "博客文章未找到",
     "general": "通用"
   },
-  "contact": {"title":"联系我们","form": {"name":"姓名*","email":"E-mail *","phone":"电话*","subject":"主题","message":"信息","submit":"现在提交"}},
+  "contact": {
+    "title":"联系我们",
+    "freeConsultation": "免费咨询",
+    "discussCase": "今天联系我们讨论您的案件",
+    "yourName": "您的名字 *",
+    "yourEmail": "您的电子邮件 *",
+    "yourPhone": "您的电话 *",
+    "subject": "主题",
+    "message": "信息 *",
+    "submit": "现在提交",
+    "thankYou": "谢谢！我们很快会与您联系。",
+    "form": {"name":"姓名*","email":"E-mail *","phone":"电话*","subject":"主题","message":"信息","submit":"现在提交"}
+  },
   "stats": {"years":"20年","cases":"各种案例经验","freeConsult":"免费咨询","trust":"信任与满意","completed":"已完成","happyClients":"满意的客户","wins":"Winning situation","team":"团队成员"},
   "news": {"title":"最新消息"},
   "subscribe": {"title":"始终保持联系","label":"电子邮件地址","button":"订阅"}

@@ -1,4 +1,12 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
+import { computed, ref } from 'vue'
+
+const { t } = useI18n()
+const route = useRoute()
+const currentLang = computed(() => route.params.lang || 'zh')
+
 defineProps({
   currentLang: {
     type: String,
@@ -30,13 +38,10 @@ const submitForm = () => {
     <div class="container mx-auto px-4">
       <div class="max-w-2xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {{ currentLang === 'en' ? 'Free Consultation' : '免费咨询' }}
+          {{ t('contact.freeConsultation') }}
         </h2>
         <p class="text-center text-blue-100 mb-8">
-          {{ currentLang === 'en'
-            ? 'Contact us today to discuss your case'
-            : '今天联系我们讨论您的案件'
-          }}
+          {{ t('contact.discussCase') }}
         </p>
 
         <form @submit.prevent="submitForm" class="space-y-4">
@@ -44,14 +49,14 @@ const submitForm = () => {
             <input
               v-model="form.name"
               type="text"
-              :placeholder="currentLang === 'en' ? 'Your Name *' : '您的名字 *'"
+              :placeholder="t('contact.yourName')"
               required
               class="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <input
               v-model="form.email"
               type="email"
-              :placeholder="currentLang === 'en' ? 'Your Email *' : '您的电子邮件 *'"
+              :placeholder="t('contact.yourEmail')"
               required
               class="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
@@ -60,7 +65,7 @@ const submitForm = () => {
           <input
             v-model="form.phone"
             type="tel"
-            :placeholder="currentLang === 'en' ? 'Your Phone *' : '您的电话 *'"
+            :placeholder="t('contact.yourPhone')"
             required
             class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
@@ -68,13 +73,13 @@ const submitForm = () => {
           <input
             v-model="form.subject"
             type="text"
-            :placeholder="currentLang === 'en' ? 'Subject' : '主题'"
+            :placeholder="t('contact.subject')"
             class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
 
           <textarea
             v-model="form.message"
-            :placeholder="currentLang === 'en' ? 'Message *' : '信息 *'"
+            :placeholder="t('contact.message')"
             rows="5"
             required
             class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -84,11 +89,11 @@ const submitForm = () => {
             type="submit"
             class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
           >
-            {{ currentLang === 'en' ? 'Submit Now' : '现在提交' }}
+            {{ t('contact.submit') }}
           </button>
 
           <div v-if="submitted" class="text-center text-green-300">
-            {{ currentLang === 'en' ? 'Thank you! We will contact you soon.' : '谢谢！我们很快会与您联系。' }}
+            {{ t('contact.thankYou') }}
           </div>
         </form>
       </div>
