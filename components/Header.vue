@@ -5,7 +5,6 @@ import { computed, ref } from 'vue'
 
 const route = useRoute()
 const { t } = useI18n()
-const router = useRouter()
 const currentLang = route.params.lang || 'zh'
 const mobileMenuOpen = ref(false)
 
@@ -18,17 +17,18 @@ const navLinks = computed(() => [
   { key: 'nav.contact', path: '/contact' }
 ])
 
+const toggleLangLink = computed(() => {
+  const newLang = currentLang === 'en' ? 'zh' : 'en'
+  const pathWithoutLang = route.path.replace(/^\/(zh|en)/, '')
+  return `/${newLang}${pathWithoutLang}`
+})
+
 const isLinkActive = (path) => {
   // Handle the special case for the home page link
   if (path === '/') {
     return route.path === `/${currentLang}` || route.path === `/${currentLang}/`
   }
   return route.path.startsWith(`/${currentLang}${path}`)
-}
-
-const toggleLang = () => {
-  const newLang = currentLang === 'en' ? 'zh' : 'en'
-  router.push(`/${newLang}`)
 }
 
 const toggleMobileMenu = () => {
@@ -67,12 +67,12 @@ const closeMobileMenu = () => {
 
         <!-- Language Switcher & Phone & Mobile Menu Button -->
         <div class="flex items-center space-x-4">
-          <button
-            @click="toggleLang"
+          <NuxtLink
+            :to="toggleLangLink"
             class="px-3 py-1 text-sm font-medium rounded-md bg-blue-100 text-blue-900 hover:bg-blue-200 transition-colors"
           >
             {{ currentLang === 'en' ? '中文' : 'EN' }}
-          </button>
+          </NuxtLink>
           <a href="tel:2898098899" class="hidden sm:inline-block text-blue-900 font-semibold hover:text-blue-700 transition-colors">
             {{ t('site.phone') }}
           </a>
