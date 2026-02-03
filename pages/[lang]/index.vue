@@ -11,6 +11,7 @@ const { locale } = useI18n()
 
 const lang = (route.params.lang === 'en') ? 'en' : 'zh'
 locale.value = lang
+const currentLang = lang
 </script>
 
 <template>
@@ -18,6 +19,7 @@ locale.value = lang
     <HomeHero />
     <HomeServices />
     <HomeTrafficViolations />
+    <CaseGallery :current-lang="currentLang" />
     <HomeStats />
     <HomeContactForm />
   </div>

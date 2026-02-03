@@ -20,6 +20,7 @@ const currentLang = lang
     <AboutLeaderStory :current-lang="currentLang" />
     <AboutTeam :current-lang="currentLang" />
     <AboutClients :current-lang="currentLang" />
+    <CaseGallery :current-lang="currentLang" />
     <AboutWhyChooseUs :current-lang="currentLang" />
     <HomeContactForm :current-lang="currentLang" />
   </div>
