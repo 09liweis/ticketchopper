@@ -97,7 +97,7 @@
     "ourLocation": "Our Location",
     "findMap": "Find us on the map",
     "aboutUs": "About Us",
-    "welcome": "Welcome to Wensheng Legal Specialists",
+    "welcome": "Welcome to York Consulting",
     "faq": "FAQ",
     "frequentlyAsked": "Frequently Asked Questions",
     "contactUs": "Contact Us",
@@ -119,5 +119,20 @@
   },
   "stats": {"years":"20 years","cases":"Various case experience","freeConsult":"Free Consultation","trust":"Trust & Satisfaction","completed":"Completed","happyClients":"Satisfied clients","wins":"Winning situations","team":"Team members"},
   "news": {"title":"Latest News"},
-  "subscribe": {"title":"Stay Connected","label":"Email address","button":"Subscribe"}
+  "subscribe": {"title":"Stay Connected","label":"Email address","button":"Subscribe"},
+  "leaderStory": {
+    "title": "Johnny's Story",
+    "intro": "Welcome to York Consulting, a team of experienced and diverse professionals dedicated to providing you with the highest quality legal services. Our team leader, Johnny, moved to Toronto in 1995 and graduated from the University of Toronto.",
+    "experience": "With years of deep involvement in insurance business, Johnny understands the profound impact of criminal and traffic records on insurance premiums. His expertise and rich experience are the core strength of our team.",
+    "practiceAreas": "Practice Areas",
+    "criminalLaw": "Criminal Law",
+    "trafficLaw": "Traffic Law",
+    "familyLaw": "Family Law",
+    "contact": "If you want to know about traffic regulations and related fines and demerit points, or if you already have a ticket, contact us on WeChat: wenshenglegal"
+  },
+  "footer": {
+    "companyName": "York Consulting",
+    "description": "Professional legal services for traffic violations and criminal defense.",
+    "rights": "All rights reserved."
+  }
 }

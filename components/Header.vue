@@ -1,11 +1,8 @@
 <script setup>
-import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { computed, ref } from 'vue'
 
-const route = useRoute()
-const { t } = useI18n()
-const currentLang = computed(() => route.params.lang || 'zh')
+const { t, locale } = useI18n()
 const mobileMenuOpen = ref(false)
 
 const navLinks = computed(() => [
@@ -18,17 +15,18 @@ const navLinks = computed(() => [
 ])
 
 const toggleLangLink = computed(() => {
-  const newLang = currentLang.value === 'en' ? 'zh' : 'en'
-  const pathWithoutLang = route.path.replace(/^\/(zh|en)/, '')
+  const newLang = locale.value === 'en' ? 'zh' : 'en'
+  const pathWithoutLang = useRoute().path.replace(/^\/(zh|en)/, '')
   return `/${newLang}${pathWithoutLang}`
 })
 
 const isLinkActive = (path) => {
+  const route = useRoute()
   // Handle the special case for the home page link
   if (path === '/') {
-    return route.path === `/${currentLang.value}` || route.path === `/${currentLang.value}/`
+    return route.path === `/${locale.value}` || route.path === `/${locale.value}/`
   }
-  return route.path.startsWith(`/${currentLang.value}${path}`)
+  return route.path.startsWith(`/${locale.value}${path}`)
 }
 
 const toggleMobileMenu = () => {
@@ -46,8 +44,8 @@ const closeMobileMenu = () => {
       <div class="flex items-center justify-between h-16">
         <!-- Logo/Brand -->
         <div class="flex-shrink-0">
-          <NuxtLink :to="`/${currentLang}`" class="block">
-            <h1 class="text-2xl font-bold text-blue-900">Ticketchopper</h1>
+          <NuxtLink :to="`/${locale}`" class="block">
+            <h1 class="text-2xl font-bold text-blue-900">{{ t('footer.companyName') }}</h1>
             <p class="text-xs text-gray-600">{{ t('common.legalServices') }}</p>
           </NuxtLink>
         </div>
@@ -57,7 +55,7 @@ const closeMobileMenu = () => {
           <NuxtLink
             v-for="link in navLinks"
             :key="link.key"
-            :to="`/${currentLang}${link.path}`"
+            :to="`/${locale}${link.path}`"
             class="font-medium text-sm transition-colors"
             :class="isLinkActive(link.path) ? 'text-blue-900' : 'text-gray-700 hover:text-blue-900'"
           >
@@ -115,7 +113,7 @@ const closeMobileMenu = () => {
           <NuxtLink
             v-for="link in navLinks"
             :key="link.key"
-            :to="`/${currentLang}${link.path}`"
+            :to="`/${locale}${link.path}`"
             class="block px-3 py-2 rounded-md font-medium transition-colors"
             :class="isLinkActive(link.path) ? 'bg-blue-50 text-blue-900' : 'text-gray-700 hover:bg-blue-50 hover:text-blue-900'"
             @click="closeMobileMenu"

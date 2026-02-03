@@ -115,7 +115,7 @@
     "ourLocation": "我们的位置",
     "findMap": "在地图上找到我们",
     "aboutUs": "关于我们",
-    "welcome": "欢迎来到稳胜刑事、告票、车险专门店",
+    "welcome": "欢迎来到稳胜刑事，告票，车险专门店",
     "faq": "常问问题",
     "frequentlyAsked": "常见问题",
     "contactUs": "联系我们",
@@ -137,5 +137,20 @@
   },
   "stats": {"years":"20年","cases":"各种案例经验","freeConsult":"免费咨询","trust":"信任与满意","completed":"已完成","happyClients":"满意的客户","wins":"Winning situation","team":"团队成员"},
   "news": {"title":"最新消息"},
-  "subscribe": {"title":"始终保持联系","label":"电子邮件地址","button":"订阅"}
+  "subscribe": {"title":"始终保持联系","label":"电子邮件地址","button":"订阅"},
+  "leaderStory": {
+    "title": "领导者介绍：Johnny的故事",
+    "intro": "欢迎来到我们的稳胜刑事，告票，车险专门店，一个由经验丰富、多元化的专业人士组成的团队，致力于为您提供最优质的法律服务。我们的团队领袖Johnny，自1995年移居多伦多，毕业于多伦多大学。",
+    "experience": "凭借多年在保险业务的深入从事，Johnny深谙刑事和告票记录对保费所造成的深远影响，他的专业知识和丰富经验是我们团队的核心力量。",
+    "practiceAreas": "业务",
+    "criminalLaw": "刑事法",
+    "trafficLaw": "交通法",
+    "familyLaw": "家庭法",
+    "contact": "如果您想知道交通法规和相关罚款和扣分情况，或者您已经有告票，请马上加微信洽谈：wenshenglegal"
+  },
+  "footer": {
+    "companyName": "稳胜刑事，告票，车险专门店",
+    "description": "专业的交通违章和刑事辩护法律服务。",
+    "rights": "版权所有。"
+  }
 }
