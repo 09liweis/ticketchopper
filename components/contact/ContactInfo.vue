@@ -1,5 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { PHONE_NUMBER, WECHAT_NUMBER } from '../../constant/text';
 
 defineProps({
   currentLang: {
@@ -37,8 +38,8 @@ const { t } = useI18n()
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
                     {{ t('common.phone') }}
                   </h3>
-                  <a href="tel:289-809-8899" class="text-blue-900 hover:text-blue-700 font-semibold text-lg transition-colors">
-                    289-809-8899
+                  <a :href="`tel:${PHONE_NUMBER}`" class="text-blue-900 hover:text-blue-700 font-semibold text-lg transition-colors">
+                    {{ PHONE_NUMBER }}
                   </a>
                   <p class="text-gray-600 text-sm mt-1">
                     {{ t('common.available') }}
@@ -59,7 +60,7 @@ const { t } = useI18n()
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
                     {{ t('common.wechat') }}
                   </h3>
-                  <p class="text-blue-900 font-semibold text-lg">1020613826</p>
+                  <p class="text-blue-900 font-semibold text-lg">{{ WECHAT_NUMBER }}</p>
                   <p class="text-gray-600 text-sm mt-1">
                     {{ t('common.preferred') }}
                   </p>

@@ -1,5 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { PHONE_NUMBER, WECHAT_NUMBER } from '../constant/text';
 
 const { t, locale } = useI18n()
 </script>
@@ -42,7 +43,7 @@ const { t, locale } = useI18n()
           <ul class="space-y-2 text-gray-400 text-sm">
             <li class="flex items-center">
               <span class="mr-2">📞</span>
-              <a href="tel:2898098899" class="hover:text-white transition">{{ t('site.phone') }}</a>
+              <a :href="`tel:${PHONE_NUMBER}`" class="hover:text-white transition">{{ PHONE_NUMBER }}</a>
             </li>
             <li class="flex items-start">
               <span class="mr-2">📍</span>
@@ -50,7 +51,7 @@ const { t, locale } = useI18n()
             </li>
             <li class="flex items-center">
               <span class="mr-2">WeChat</span>
-              <span>{{ t('site.wechat') }}</span>
+              <span>{{ WECHAT_NUMBER }}</span>
             </li>
           </ul>
         </div>

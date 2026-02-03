@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { computed, ref } from 'vue'
+import { PHONE_NUMBER } from '../constant/text';
 
 const { t, locale } = useI18n()
 const mobileMenuOpen = ref(false)
@@ -71,8 +72,8 @@ const closeMobileMenu = () => {
           >
             {{ t('common.toggleLang') }}
           </NuxtLink>
-          <a href="tel:2898098899" class="hidden sm:inline-block text-blue-900 font-semibold hover:text-blue-700 transition-colors">
-            {{ t('site.phone') }}
+          <a :href="`tel:${PHONE_NUMBER}`" class="hidden sm:inline-block text-blue-900 font-semibold hover:text-blue-700 transition-colors">
+            {{ PHONE_NUMBER }}
           </a>
           <!-- Mobile Menu Button -->
           <button
