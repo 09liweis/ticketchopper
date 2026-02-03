@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
-import { PHONE_NUMBER } from '../../constant/text'
+import { COMPANY_ADDRESS, PHONE_NUMBER } from '../../constant/text'
 
 const { t } = useI18n()
 const route = useRoute()
@@ -28,7 +28,7 @@ const currentLang = computed(() => route.params.lang || 'zh')
         </div>
         <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
           <p class="text-sm text-blue-100 mb-2">{{ t('common.address') }}</p>
-          <p class="text-sm font-medium">{{ t('site.address') }}</p>
+          <p class="text-sm font-medium">{{ COMPANY_ADDRESS }}</p>
         </div>
       </div>
     </div>

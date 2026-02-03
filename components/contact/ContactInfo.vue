@@ -1,6 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { PHONE_NUMBER, WECHAT_NUMBER } from '../../constant/text';
+import { COMPANY_ADDRESS, PHONE_NUMBER, WECHAT_NUMBER } from '../../constant/text';
 
 defineProps({
   currentLang: {
@@ -80,7 +80,7 @@ const { t } = useI18n()
                   <h3 class="text-lg font-bold text-gray-900 mb-2">
                     {{ t('common.officeAddress') }}
                   </h3>
-                  <p class="text-gray-700 font-semibold leading-relaxed">203-1943 Ironoak Way<br />Oakville, ON L6H 3V7<br />Canada</p>
+                  <p class="text-gray-700 font-semibold leading-relaxed">{{ COMPANY_ADDRESS }}</p>
                 </div>
               </div>
             </div>

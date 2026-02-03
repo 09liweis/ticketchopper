@@ -1,6 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { PHONE_NUMBER, WECHAT_NUMBER } from '../constant/text';
+import { COMPANY_ADDRESS, PHONE_NUMBER, WECHAT_NUMBER } from '../constant/text';
 
 const { t, locale } = useI18n()
 </script>
@@ -47,7 +47,7 @@ const { t, locale } = useI18n()
             </li>
             <li class="flex items-start">
               <span class="mr-2">📍</span>
-              <span>{{ t('site.address') }}</span>
+              <span>{{ COMPANY_ADDRESS }}</span>
             </li>
             <li class="flex items-center">
               <span class="mr-2">WeChat</span>
