@@ -15,12 +15,11 @@ const currentLang = lang
 </script>
 
 <template>
-  <div>
-    <HeroCarousel />
-    <HomeServices />
-    <HomeTrafficViolations />
-    <CaseGallery :current-lang="currentLang" />
-    <HomeStats />
-    <HomeContactForm />
-  </div>
+  <!-- <HomeHeroCarousel /> -->
+  <HomeHero />
+  <HomeServices />
+  <HomeTrafficViolations />
+  <CaseGallery :current-lang="currentLang" />
+  <HomeStats />
+  <HomeContactForm />
 </template>

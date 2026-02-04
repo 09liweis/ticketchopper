@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { computed, ref, onMounted } from 'vue'
-import { COMPANY_ADDRESS, PHONE_NUMBER, WECHAT_NUMBER } from '~/constant/text'
 
 const { t } = useI18n()
 const route = useRoute()
@@ -92,23 +91,6 @@ onMounted(() => {
           class="w-3 h-3 rounded-full transition-all"
           :class="currentSlide === index ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'"
         />
-      </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-gradient-to-r from-blue-900 to-blue-800">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all">
-          <p class="text-sm text-blue-100 mb-2">{{ t('common.phone') }}</p>
-          <a :href="`tel:${PHONE_NUMBER}`" class="text-xl font-bold hover:text-blue-200">{{ PHONE_NUMBER }}</a>
-        </div>
-        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all">
-          <p class="text-sm text-blue-100 mb-2">WeChat</p>
-          <p class="text-xl font-bold">{{ WECHAT_NUMBER }}</p>
-        </div>
-        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm hover:bg-opacity-20 transition-all">
-          <p class="text-sm text-blue-100 mb-2">{{ t('common.address') }}</p>
-          <p class="text-sm font-medium">{{ COMPANY_ADDRESS }}</p>
-        </div>
       </div>
     </div>
   </div>
