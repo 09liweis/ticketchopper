@@ -1,6 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { COMPANY_ADDRESS, PHONE_NUMBER, WECHAT_NUMBER } from '../../constant/text';
+import { COMPANY_ADDRESS, PHONE_NUMBER, WECHAT_NUMBER, WECHAT_QR } from '../../constant/text';
 
 defineProps({
   currentLang: {
@@ -61,6 +61,7 @@ const { t } = useI18n()
                     {{ t('common.wechat') }}
                   </h3>
                   <p class="text-blue-900 font-semibold text-lg">{{ WECHAT_NUMBER }}</p>
+                  <img :src="WECHAT_QR" alt="wechat qr code" class="rounded w-[300px]" />
                   <p class="text-gray-600 text-sm mt-1">
                     {{ t('common.preferred') }}
                   </p>
