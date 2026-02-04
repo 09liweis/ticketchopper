@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { computed } from 'vue'
-import { COMPANY_ADDRESS, PHONE_NUMBER } from '../../constant/text'
+import { COMPANY_ADDRESS, PHONE_NUMBER, WECHAT_NUMBER } from '../../constant/text'
 
 const { t } = useI18n()
 const route = useRoute()

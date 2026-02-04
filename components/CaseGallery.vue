@@ -119,7 +119,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Gallery Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         <div
           v-for="image in caseImages"
           :key="image.id"
@@ -177,7 +177,7 @@ onUnmounted(() => {
         <div class="relative w-full h-full flex items-center justify-center p-4 md:p-8">
           <!-- Loading Spinner -->
           <div v-if="!imageLoaded" class="absolute inset-0 flex items-center justify-center">
-            <div class="animate-spin rounded-full h-12 w-12 border-4 border-white border-t-transparent"></div>
+            <div class="animate-spin rounded h-12 w-12 border-4 border-white border-t-transparent"></div>
           </div>
 
           <!-- Main Image -->
@@ -190,7 +190,7 @@ onUnmounted(() => {
               :src="selectedImage.src"
               :alt="selectedImage.alt"
               @load="onImageLoad"
-              class="max-w-full max-h-[85vh] w-auto h-auto object-contain rounded-lg shadow-2xl transition-all duration-300"
+              class="max-w-full max-h-[85vh] w-auto h-auto object-contain rounded shadow transition-all duration-300"
               :class="[
                 imageLoaded ? 'opacity-100' : 'opacity-0',
                 isZoomed ? 'scale-150 md:scale-200' : 'scale-100'
