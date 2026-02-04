@@ -16,7 +16,7 @@ const currentLang = lang
 
 <template>
   <div>
-    <HomeHero />
+    <HeroCarousel />
     <HomeServices />
     <HomeTrafficViolations />
     <CaseGallery :current-lang="currentLang" />

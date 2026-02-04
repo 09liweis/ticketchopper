@@ -2,6 +2,20 @@
   "site": {
     "quote": "\"Justice brought by love is surrender; justice brought by law is punishment\""
   },
+  "hero": {
+    "slides": [
+      {
+        "title": "End Domestic Violence & DUI",
+        "subtitle": "One-Stop Traffic Violation Solution",
+        "description": "Professional expertise in handling traffic tickets, domestic violence, and DUI cases"
+      },
+      {
+        "title": "Professional Legal Defense",
+        "subtitle": "Protecting Your Rights",
+        "description": "20 years of experience providing excellent legal services"
+      }
+    ]
+  },
   "nav": {
     "home": "Home",
     "about": "About Us",
