@@ -11,6 +11,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en' // Default language, will be updated dynamically
+      },
       title: 'York Consulting',
       meta: [
         { charset: 'utf-8' },
@@ -18,6 +21,10 @@ export default defineNuxtConfig({
         { 
           name: 'description', 
           content: 'Expert legal representation for criminal defense, DUI, traffic violations, and more.' 
+        },
+        {
+          name: 'keywords',
+          content: 'criminal defense, DUI lawyer, traffic violations, impaired driving, domestic violence, assault defense, fraud cases, dangerous driving, legal services Toronto'
         },
         { name: 'format-detection', content: 'telephone=no' },
         
@@ -27,14 +34,18 @@ export default defineNuxtConfig({
         
         // Open Graph / Social Media
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'Your Law Firm Name' },
-        { property: 'og:description', content: 'Professional legal services' },
+        { property: 'og:title', content: 'York Consulting - Professional Legal Services' },
+        { property: 'og:description', content: 'Expert legal representation for criminal defense, DUI, traffic violations, and more.' },
         { property: 'og:image', content: '/og-image.png' },
+        
+        // Open Graph Locale
+        { property: 'og:locale', content: 'en_CA' },
+        { property: 'og:locale:alternate', content: 'zh_CN' },
         
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'Your Law Firm Name' },
-        { name: 'twitter:description', content: 'Professional legal services' },
+        { name: 'twitter:title', content: 'York Consulting - Professional Legal Services' },
+        { name: 'twitter:description', content: 'Expert legal representation for criminal defense, DUI, traffic violations, and more.' },
       ],
       link:[
         {

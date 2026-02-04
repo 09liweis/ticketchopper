@@ -1,10 +1,18 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted } from 'vue'
 import { PHONE_NUMBER } from '../constant/text';
 
 const { t, locale } = useI18n()
 const mobileMenuOpen = ref(false)
+
+// Use the locale meta composable to update meta tags based on locale
+const { updateMeta } = useLocaleMeta()
+
+// Update meta on component mount
+onMounted(() => {
+  updateMeta()
+})
 
 const navLinks = computed(() => [
   { key: 'nav.home', path: '/' },
