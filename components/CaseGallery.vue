@@ -259,10 +259,7 @@ onUnmounted(() => {
 
             <!-- Keyboard Shortcuts Hint -->
             <div class="mt-3 text-center text-white/60 text-xs md:text-sm">
-              {{ currentLang === 'en' 
-                ? 'Use ← → arrow keys to navigate • ESC to close • Click image to zoom' 
-                : '使用 ← → 方向键导航 • ESC 关闭 • 点击图片放大' 
-              }}
+              {{ t('caseGallery.keyboardShortcut') }}
             </div>
           </div>
         </div>

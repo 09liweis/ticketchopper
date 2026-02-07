@@ -148,7 +148,8 @@
   },
   "caseGallery": {
     "title": "Our Case Gallery",
-    "description": "View our successful cases and client testimonials. Click any image to view in full size."
+    "description": "View our successful cases and client testimonials. Click any image to view in full size.",
+    "keyboardShortcut": "Use ← → arrow keys to navigate • ESC to close • Click image to zoom"
   },
   "footer": {
     "companyName": "York Consulting",
