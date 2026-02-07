@@ -15,7 +15,7 @@ onMounted(() => {
 })
 
 const navLinks = computed(() => [
-  { key: 'nav.home', path: '/' },
+  // { key: 'nav.home', path: '/' },
   { key: 'nav.about', path: '/about-us' },
   { key: 'nav.services', path: '/services' },
   { key: 'nav.blog', path: '/blogs' },
