@@ -146,6 +146,10 @@
     "familyLaw": "Family Law",
     "contact": "If you want to know about traffic regulations and related fines and demerit points, or if you already have a ticket, contact us on WeChat: wenshenglegal"
   },
+  "caseGallery": {
+    "title": "Our Case Gallery",
+    "description": "View our successful cases and client testimonials. Click any image to view in full size."
+  },
   "footer": {
     "companyName": "York Consulting",
     "description": "Professional legal services for traffic violations and criminal defense.",

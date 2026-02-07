@@ -1,5 +1,8 @@
 <script setup>
 import { ref, computed, watch, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale } = useI18n()
 
 defineProps({
   currentLang: {
@@ -111,10 +114,10 @@ onUnmounted(() => {
       <!-- Header -->
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-          {{ currentLang === 'en' ? 'Our Case Gallery' : '案例库' }}
+          {{ t('caseGallery.title') }}
         </h2>
-        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-          {{ currentLang === 'en' ? 'View our successful cases and client testimonials. Click any image to view in full size.' : '查看我们的成功案例和客户证言。点击任何图片以全尺寸查看。' }}
+        <p class="text-lg text-gray-600 text-center">
+          {{ t('caseGallery.description') }}
         </p>
       </div>
 
