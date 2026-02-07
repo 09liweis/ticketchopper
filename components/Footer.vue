@@ -58,7 +58,7 @@ const { t, locale } = useI18n()
       </div>
 
       <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
-        <p>&copy; 2026 {{ t('footer.companyName') }}. {{ t('footer.rights') }}</p>
+        <p>&copy; {{new Date().getFullYear()}} {{ t('footer.companyName') }}. {{ t('footer.rights') }}</p>
       </div>
     </div>
   </footer>
