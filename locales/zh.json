@@ -167,7 +167,9 @@
   "caseGallery": {
     "title": "案例库",
     "description": "查看我们成功的案件和客户评价。点击任何图片以全尺寸查看。",
-    "keyboardShortcut": "使用 ← → 方向键导航 • ESC 关闭 • 点击图片放大"
+    "keyboardShortcut": "使用 ← → 方向键导航 • ESC 关闭 • 点击图片放大",
+    "zoomIn": "放大",
+    "zoomOut": "缩小"
   },
   "footer": {
     "companyName": "稳胜刑事，告票，车险专门店",
