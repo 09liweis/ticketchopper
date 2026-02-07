@@ -96,7 +96,7 @@ const toggleItem = (index) => {
 
             <div
               v-if="expandedItems.includes(index)"
-              class="px-6 pb-6 border-t border-gray-200"
+              class="p-6 border-t border-gray-200"
             >
               <p class="text-gray-700 leading-relaxed">
                 {{ item.answer }}
