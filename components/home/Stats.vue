@@ -10,8 +10,8 @@ const currentLang = computed(() => route.params.lang || 'zh')
 const stats = [
   { key: 'years', value: '20+' },
   { key: 'completed', value: '1825' },
-  { key: 'happyClients', value: '532' },
-  { key: 'team', value: '27' }
+  { key: 'happyClients', value: '98%' },
+  { key: 'team', value: '10+' }
 ]
 </script>
 
