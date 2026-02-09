@@ -50,6 +50,10 @@
       "mischief": { "title": "Mischief", "desc": "For mischief charges you need experienced counsel to protect your rights. We provide detailed legal analysis and strong defense strategies." }
     }
   },
+  "team": {
+    "title": "Our Diverse Legal Team",
+    "subtitle": "ur legal team consists of professionals from different backgrounds, including local, Jewish, and Irish-Canadian paralegals and criminal lawyers. These team members not only possess extensive legal knowledge but also bring invaluable experience from former OPP officers, police officers, prosecutors, and judges. This diverse background makes our team adept at handling various cases."
+  },
   "traffic": {
     "title": "Traffic Violations",
     "items": {
