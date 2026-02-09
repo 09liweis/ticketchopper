@@ -32,6 +32,12 @@
   "intro": {
     "paragraph": "公司服务众多VVIP客户，包括地产大亨Leo、168寿司老板Ivan、TikTok网红、豪车销售王子Howard、经验丰富的房地产专家、盛地地产老板Mike、顶级寿险销售冠军汇盛金融老板Eric、EASY EDUCATION 老板Jacky和最年轻的TikTok飞行员杰弗里。他们在处理艾伯塔省、魁北克省和纽约州的交通罚单方面也有独特的优势。"
   },
+  "clients": {
+    "title": "我们的客户：名人与VVIP",
+    "subtitle": "我们服务众多名人和VVIP客户，涵盖多个行业",
+    "anotherTitle": "专业优势：跨区域服务能力",
+    "description": "我们公司在处理交通告票方面具有独特优势，能够同时处理阿尔伯塔省、魁北克省和纽约州的案件。这一点在业内极为罕见，展示了我们的专业能力和广泛影响力。"
+  },
   "services": {
     "title": "法律业务领域",
     "typesTitle": "犯罪类型处理",
