@@ -1,10 +1,13 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { useRoute } from 'vue-router'
 
 const { t } = useI18n()
-const route = useRoute()
-const currentLang = route.params.lang || 'zh'
+
+const teamMembers = [
+  { icon: '👨‍⚖️', title: t('team.members.criminalLawyers.title'), desc: t('team.members.criminalLawyers.desc') },
+  { icon: '🚗', title: t('team.members.trafficLaw.title'), desc: t('team.members.trafficLaw.desc') },
+  { icon: '👮', title: t('team.members.lawEnforcement.title'), desc: t('team.members.lawEnforcement.desc') },
+]
 </script>
 
 <template>
@@ -20,20 +23,10 @@ const currentLang = route.params.lang || 'zh'
         </p>
 
         <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="text-center p-4 bg-blue-50 rounded">
-            <div class="text-4xl mb-2">👨‍⚖️</div>
-            <h3 class="font-bold text-gray-900 mb-2">{{ currentLang === 'en' ? 'Criminal Lawyers' : '刑事律师' }}</h3>
-            <p class="text-sm text-gray-600">{{ currentLang === 'en' ? 'Experienced in criminal defense' : '刑事辩护专家' }}</p>
-          </div>
-          <div class="text-center p-4 bg-blue-50 rounded">
-            <div class="text-4xl mb-2">🚗</div>
-            <h3 class="font-bold text-gray-900 mb-2">{{ currentLang === 'en' ? 'Traffic Law' : '交通法' }}</h3>
-            <p class="text-sm text-gray-600">{{ currentLang === 'en' ? 'Traffic ticket specialists' : '交通罚单专家' }}</p>
-          </div>
-          <div class="text-center p-4 bg-blue-50 rounded">
-            <div class="text-4xl mb-2">👮</div>
-            <h3 class="font-bold text-gray-900 mb-2">{{ currentLang === 'en' ? 'Law Enforcement' : '执法背景' }}</h3>
-            <p class="text-sm text-gray-600">{{ currentLang === 'en' ? 'Former OPP, police, prosecutors' : 'OPP、警察、检控官背景' }}</p>
+          <div v-for="member in teamMembers" :key="member.title" class="text-center p-4 bg-blue-50 rounded">
+            <div class="text-4xl mb-2">{{ member.icon }}</div>
+            <h3 class="font-bold text-gray-900 mb-2">{{ member.title }}</h3>
+            <p class="text-sm text-gray-600">{{ member.desc }}</p>
           </div>
         </div>
       </div>
