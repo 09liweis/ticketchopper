@@ -9,18 +9,18 @@ const currentLang = route.params.lang || 'zh'
 const reasons = [
   {
     icon: '⚖️',
-    title: currentLang === 'en' ? 'Legal Expertise' : '法律律师',
-    desc: currentLang === 'en' ? 'Contact us now with experienced...' : '立即联系我们经验...'
+    title: t(`whyChooseUs.reasons.legalExpertise.title`),
+    desc: t(`whyChooseUs.reasons.legalExpertise.desc`)
   },
   {
     icon: '📅',
-    title: currentLang === 'en' ? 'Years of Experience' : '多年经验',
-    desc: currentLang === 'en' ? 'Trust our professional knowledge...' : '相信我们的专业知识...'
+    title: t(`whyChooseUs.reasons.yearsofExperience.title`),
+    desc: t(`whyChooseUs.reasons.yearsofExperience.desc`)
   },
   {
     icon: '🏆',
-    title: currentLang === 'en' ? 'Legal Certification' : '法律证书',
-    desc: currentLang === 'en' ? 'Get our certified expertise...' : '获得我们经过认证的...'
+    title: t(`whyChooseUs.reasons.legalCertification.title`),
+    desc: t(`whyChooseUs.reasons.legalCertification.desc`)
   }
 ]
 </script>
@@ -36,7 +36,7 @@ const reasons = [
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div v-for="(reason, idx) in reasons" :key="idx" class="bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-900">
+        <div v-for="(reason, idx) in reasons" :key="idx" class="bg-white p-8 rounded text-center shadow-md border-t-4 border-blue-900">
           <div class="text-5xl mb-4">{{ reason.icon }}</div>
           <h3 class="text-xl font-bold text-gray-900 mb-3">{{ reason.title }}</h3>
           <p class="text-gray-700">{{ reason.desc }}</p>

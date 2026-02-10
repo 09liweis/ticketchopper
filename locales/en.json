@@ -34,7 +34,21 @@
   },
   "whyChooseUs": {
     "title":"Why Choose Us",
-    "description": "Choose us as your expert representatives in traffic law. Our skilled and compassionate team is committed to resolving legal complexities and ensuring your case achieves the best results."
+    "description": "Choose us as your expert representatives in traffic law. Our skilled and compassionate team is committed to resolving legal complexities and ensuring your case achieves the best results.",
+    "reasons":{
+      "legalExpertise": {
+        "title": "Legal Expertise",
+        "desc": "Contact us now with experienced..."
+      },
+      "yearsofExperience": {
+        "title": "Years of Experience",
+        "desc": "Trust our professional knowledge..."
+      },
+      "legalCertification": {
+        "title": "Legal Certification",
+        "desc": "Get our certified expertise..."
+      }
+    }
   },
   "clients": {
     "title": "Our Valued Clients",

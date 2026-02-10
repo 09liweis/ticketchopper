@@ -34,7 +34,21 @@
   },
   "whyChooseUs": {
     "title":"为什么选择我们为您提供支持",
-    "description": "选择我们作为交通法方面的专家代表，我们技术精湛且富有同情心的团队致力于解决法律复杂性并确保您的案件获得最佳结果。"
+    "description": "选择我们作为交通法方面的专家代表，我们技术精湛且富有同情心的团队致力于解决法律复杂性并确保您的案件获得最佳结果。",
+    "reasons":{
+      "legalExpertise": {
+        "title": "法律律师",
+        "desc": "立即联系我们经验..."
+      },
+      "yearsofExperience": {
+        "title": "多年经验",
+        "desc": "相信我们的专业知识..."
+      },
+      "legalCertification": {
+        "title": "法律证书",
+        "desc": "获得我们经过认证的..."
+      }
+    }
   },
   "clients": {
     "title": "我们的客户：名人与VVIP",
