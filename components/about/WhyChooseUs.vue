@@ -29,12 +29,10 @@ const reasons = [
   <section class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">
-        {{ currentLang === 'en' ? 'Why Choose Us' : '为什么选择我们为您提供支持' }}
+        {{ t('whyChooseUs.title') }}
       </h2>
       <p class="text-lg text-gray-600 text-center mb-12">
-        {{ currentLang === 'en'
-          ? 'Choose us as your expert representatives in traffic law. Our skilled and compassionate team is committed to resolving legal complexities and ensuring your case achieves the best results.'
-          : '选择我们作为交通法方面的专家代表，我们技术精湛且富有同情心的团队致力于解决法律复杂性并确保您的案件获得最佳结果。' }}
+        {{ t('whyChooseUs.description') }}
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
