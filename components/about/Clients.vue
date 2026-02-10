@@ -7,13 +7,13 @@ const route = useRoute()
 const currentLang = route.params.lang || 'zh'
 
 const clients = [
-  { name: 'Leo', title: currentLang === 'en' ? 'Real Estate Tycoon' : '地产大亨' },
-  { name: 'Ivan', title: currentLang === 'en' ? '168 Sushi Owner' : '168寿司老板' },
-  { name: 'Howard', title: currentLang === 'en' ? 'Luxury Car Salesman' : '豪车销售王子' },
-  { name: 'Mike', title: currentLang === 'en' ? 'Real Estate Expert' : '房地产专家' },
-  { name: 'Eric', title: currentLang === 'en' ? 'Insurance Sales Champion' : '寿险销售冠军' },
-  { name: 'Jacky', title: currentLang === 'en' ? 'Education Business Owner' : 'EASY EDUCATION老板' },
-  { name: 'Jeffrey', title: currentLang === 'en' ? 'Youngest TikTok Pilot' : '最年轻的TikTok飞行员' }
+  { name: 'Leo', title: t('clients.people.Leo')},
+  { name: 'Ivan', title: t('clients.people.Ivan')},
+  { name: 'Howard', title: t('clients.people.Howard')},
+  { name: 'Mike', title: t('clients.people.Mike')},
+  { name: 'Eric', title: t('clients.people.Eric')},
+  { name: 'Jacky', title: t('clients.people.Jacky')},
+  { name: 'Jeffrey', title: t('clients.people.Jeffrey')},
 ]
 </script>
 

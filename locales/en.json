@@ -54,7 +54,16 @@
     "title": "Our Valued Clients",
     "subtitle": "We serve a diverse clientele of celebrities and VVIP clients across multiple industries",
     "anotherTitle": "Cross-Border Expertise",
-    "description": "Our company has unique advantages in handling traffic tickets across multiple jurisdictions. We can simultaneously handle cases in Alberta, Quebec, and New York State - a capability that is extremely rare in the industry, demonstrating our professional expertise and broad influence."
+    "description": "Our company has unique advantages in handling traffic tickets across multiple jurisdictions. We can simultaneously handle cases in Alberta, Quebec, and New York State - a capability that is extremely rare in the industry, demonstrating our professional expertise and broad influence.",
+    "people": {
+      "Leo": "Real Estate Tycoon",
+      "Ivan": "168 Sushi Owner",
+      "Howard": "Luxury Car Salesman",
+      "Mike": "Real Estate Expert",
+      "Eric": "Insurance Sales Champion",
+      "Jacky": "Education Business Owner",
+      "Jeffrey": "Youngest TikTok Pilot"
+    }
   },
   "services": {
     "title": "Legal Practice Areas",
