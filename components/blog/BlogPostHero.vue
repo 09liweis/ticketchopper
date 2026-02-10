@@ -1,4 +1,7 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 defineProps({
   currentLang: {
     type: String,
@@ -31,15 +34,15 @@ defineProps({
         <nav class="mb-6 text-sm">
           <ol class="flex items-center space-x-2 text-blue-200">
             <li>
-              <a :href="`/${currentLang}`" class="hover:text-white transition-colors">
-                {{ currentLang === 'en' ? 'Home' : '首页' }}
-              </a>
+              <NuxtLink :href="`/${currentLang}`" class="hover:text-white transition-colors">
+                {{ t('common.home') }}
+              </NuxtLink>
             </li>
             <li>/</li>
             <li>
-              <a :href="`/${currentLang}/blog`" class="hover:text-white transition-colors">
-                {{ currentLang === 'en' ? 'Blog' : '博文' }}
-              </a>
+              <NuxtLink :href="`/${currentLang}/blogs`" class="hover:text-white transition-colors">
+                {{ t('common.blogs') }}
+              </NuxtLink>
             </li>
             <li>/</li>
             <li class="text-white">{{ category }}</li>
