@@ -23,13 +23,11 @@ const { t } = useI18n()
 
         <div class="mt-16 pt-8 border-t border-gray-200">
           <h3 class="text-2xl font-bold text-gray-900 mb-6">
-            {{ currentLang === 'en' ? 'Related Articles' : '相关文章' }}
+            {{ t('blogs.relatedArticles') }}
           </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="text-gray-500 text-center col-span-2 py-8">
-              {{ currentLang === 'en'
-                ? 'Related articles will appear here'
-                : '相关文章将在这里显示'
+              {{ t('blogs.willAppear')
               }}
             </div>
           </div>
@@ -38,7 +36,7 @@ const { t } = useI18n()
         <div class="mt-12 pt-8 border-t border-gray-200">
           <div class="flex items-center justify-between">
             <h4 class="text-lg font-semibold text-gray-900">
-              {{ currentLang === 'en' ? 'Share this article' : '分享这篇文章' }}
+              {{ t('blogs.shareThisArticle') }}
             </h4>
             <div class="flex space-x-4">
               <button class="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors">

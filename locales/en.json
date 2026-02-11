@@ -172,6 +172,11 @@
     "blogNotFound": "Blog Post Not Found",
     "general": "General"
   },
+  "blogs":{
+    "relatedArticles": "Related Articles",
+    "willAppear": "Related articles will appear here",
+    "shareThisArticle": "Share this article"
+  },
   "contact": {
     "title":"Contact Us",
     "freeConsultation": "Free Consultation",

@@ -190,6 +190,11 @@
     "blogNotFound": "博客文章未找到",
     "general": "通用"
   },
+  "blogs":{
+    "relatedArticles": "相关文章",
+    "willAppear": "相关文章将在这里显示",
+    "shareThisArticle": "分享这篇文章"
+  },
   "contact": {
     "title":"联系我们",
     "freeConsultation": "免费咨询",
