@@ -28,11 +28,8 @@ const { t } = useI18n()
       <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
         {{ t('contact.title') }}
       </h1>
-      <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-        {{ currentLang === 'en'
-          ? 'Get in touch with our experienced legal team. We\'re here to provide expert guidance for your case.'
-          : '与我们经验丰富的法律团队取得联系。我们随时准备为您的案件提供专家指导。'
-        }}
+      <p class="text-xl md:text-2xl text-blue-100 mx-auto leading-relaxed">
+        {{ t('contact.desc') }}
       </p>
     </div>
   </section>
