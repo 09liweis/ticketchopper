@@ -170,7 +170,8 @@
     "frequentlyAsked": "Frequently Asked Questions",
     "contactUs": "Contact Us",
     "blogNotFound": "Blog Post Not Found",
-    "general": "General"
+    "general": "General",
+    "learnMore": "Learn More →"
   },
   "blogs":{
     "title":"Legal Insights & Updates",

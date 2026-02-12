@@ -43,7 +43,7 @@ const getBlogUrl = (slug) => {
             {{ t(`services.items.${service.key}.desc`) }}
           </p>
           <NuxtLink :to="getBlogUrl(service.slug)" class="text-blue-900 font-semibold hover:text-blue-700">
-            {{ currentLang === 'en' ? 'Learn More →' : '了解详情 →' }}
+            {{ t('common.learnMore') }}
           </NuxtLink>
         </div>
       </div>
