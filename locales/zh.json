@@ -191,6 +191,8 @@
     "general": "通用"
   },
   "blogs":{
+    "title":"法律见解与更新",
+    "desc": "了解最新的刑法、交通违规和法律辩护策略",
     "relatedArticles": "相关文章",
     "willAppear": "相关文章将在这里显示",
     "shareThisArticle": "分享这篇文章"

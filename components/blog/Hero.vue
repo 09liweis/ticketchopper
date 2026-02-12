@@ -1,4 +1,7 @@
 <script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 defineProps({
   currentLang: {
     type: String,
@@ -13,13 +16,10 @@ defineProps({
     <div class="container mx-auto px-4 relative z-10">
       <div class="max-w-4xl mx-auto text-center">
         <h1 class="text-4xl md:text-5xl font-bold mb-6">
-          {{ currentLang === 'en' ? 'Legal Insights & Updates' : '法律见解与更新' }}
+          {{ t('blogs.title') }}
         </h1>
         <p class="text-xl text-blue-100">
-          {{ currentLang === 'en' 
-            ? 'Stay informed about criminal law, traffic violations, and legal defense strategies' 
-            : '了解最新的刑法、交通违规和法律辩护策略' 
-          }}
+          {{ t('blogs.desc') }}
         </p>
       </div>
     </div>
