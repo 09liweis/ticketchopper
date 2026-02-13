@@ -1,6 +1,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useRoute, useRouter } from '#app'
+import { useSeo } from '~/composables/useSeo'
 
 const { t } = useI18n()
 const route = useRoute()
@@ -21,6 +22,11 @@ const trafficItems = [
 if (!trafficItems.includes(violation)) {
   router.push(`/${route.params.lang}/`)
 }
+
+useSeo({
+  title: `${t(`traffic.items.${violation}.title`)} - ${t('meta.title')}`,
+  description: t(`traffic.items.${violation}.desc`)
+})
 
 const getBackLink = () => {
   return `/${route.params.lang}/`
