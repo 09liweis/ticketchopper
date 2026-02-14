@@ -91,10 +91,10 @@ export const useSeo = (options: MetaOptions) => {
     meta,
     script: scripts,
     link: [
-        {
-            rel: 'canonical',
-            href: url
-        }
+      {
+        rel: 'canonical',
+        href: url
+      }
     ]
   })
 }
