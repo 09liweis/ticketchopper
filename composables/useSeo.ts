@@ -1,5 +1,5 @@
 import { useHead } from '#app'
-import type { BlogPost } from '~/composables/useBlogPosts'
+import type { BlogPost } from './useBlogPosts'
 
 interface MetaOptions {
   title: string
